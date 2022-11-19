@@ -20,6 +20,7 @@ body {
     font-size: x-small;
 }  
 
+/*components*/
 .component__code {
     border: 1px solid var(--black);
 }
