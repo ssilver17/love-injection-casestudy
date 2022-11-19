@@ -1,0 +1,21 @@
+:root {
+    --font-mono: Roboto Mono Medium, monospace;
+    --black: #000;
+    --white: #fff;
+    --gray: #8b8b8b;
+    --pale-yellow: #fffab4;
+    --light-red: #ff7373;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: var(--font-mono);
+    color: var(--black);
+    font-size: x-small;
+}  
