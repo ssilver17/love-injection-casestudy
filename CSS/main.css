@@ -19,3 +19,7 @@ body {
     color: var(--black);
     font-size: x-small;
 }  
+
+.component__code {
+    border: 1px solid var(--black);
+}
