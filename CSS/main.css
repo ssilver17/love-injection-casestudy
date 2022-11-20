@@ -8,12 +8,46 @@
     --light-red: #ff7373;
 }
 
+/*main*/
+
 html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
   }
+
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-bottom: 50px 50px;
+}  
+
+h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px;
+    background-color: #ff737386;
+    color: rgba(0, 0, 0, 0.785);
+}
+
+p {
+    font-family: sans-serif;
+    font-size: small;
+    margin: 20px 20px 20px 20px; 
+}
 
 /*Typogrophy*/  
 body {
@@ -21,6 +55,7 @@ body {
     color: var(--black);
     font-size: x-small;
     line-height: 1rem;
+    letter-spacing: -.25px;
 }  
 
 img {
@@ -28,6 +63,12 @@ img {
 }
 
 /*components*/
+
+.component {
+
+    margin-bottom: 50px;
+}
+
 .component__code {
     border: 1px solid var(--gray);
 }
@@ -41,19 +82,34 @@ img {
     overflow-x: auto;
 }
 
-.component-h2 {
+.component-header__blk {
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 200;
+    letter-spacing: -.25px;;
     color: #000;
 }
 
-.component-h2__white {
+.component-header__white {
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 200;
     color: var(--white);
     background-color: rebeccapurple;
-    width: 200px;
+    width: 250px;
     padding: 10px 10px;
+}
+
+/*page header*/
+.wordmark {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3.65rem;
+    letter-spacing: -3px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.main-nav__list {
+    display: flex;
 }
