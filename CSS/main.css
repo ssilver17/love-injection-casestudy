@@ -82,6 +82,7 @@ img {
 
 .component img {
     max-width: initial;
+    margin-left: 20px;
 }
 
 .component__img {
