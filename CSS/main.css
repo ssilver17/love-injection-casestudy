@@ -130,6 +130,51 @@ img {
 .main-nav__list {
     list-style: none;
     display: flex;
+    padding-left: 10px;
 }
 
+/*
+li {
+    padding: 10px 200px 10px 0px;
+}
+*/
+/*merch section*/
 
+.section-merch{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(264px, 1fr));
+    grid-gap: 10px;
+}
+
+.merch-item__price {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    margin-top: 0px;
+    color: var(--gray)
+}
+
+.merch-item__title {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    line-height: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--black)
+}
+
+/*filter toggle*/
+
+.filter-toggle {
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.filter-toggle__title {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.filter-toggle__item {
+    font-size: 20px;
+    padding: 2px 10px;
+}
