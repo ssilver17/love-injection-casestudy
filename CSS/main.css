@@ -6,6 +6,7 @@
     --gray: #8b8b8b;
     --pale-yellow: #fffab4;
     --light-red: #ff7373;
+    --red: rgb(232, 54, 52);
 }
 
 /*main*/
@@ -44,7 +45,7 @@ h3 {
 }
 
 p {
-    font-family: sans-serif;
+    font-family: var(--font-mono);
     font-size: small;
     margin: 20px 20px 20px 20px; 
 }
@@ -101,10 +102,10 @@ img {
 .component-header__white {
     font-family: var(--font-mono);
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 225    ;
     color: var(--white);
     background-color: rebeccapurple;
-    width: 250px;
+    width: 225px;
     padding: 10px 10px;
 }
 
@@ -121,17 +122,101 @@ img {
     padding-left: 0;
 }
 
-.component__code-main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.main-nav {
+   display: grid;
+    
 }
 
 .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(81px, 1fr));
+    grid-template-rows: 71px;
+    grid-gap: 10px;
     list-style: none;
-    display: flex;
-    padding-left: 10px;
+    padding-top: 10px;
 }
+
+.main-nav__index {
+    grid-column: 1 / 3;
+}
+
+.main-nav__logo {
+    grid-column: 4 / 6;
+}
+
+.main-nav__cart {
+    grid-column: 7 / 9;
+}
+
+.radio-indicator__button {
+    background-color: #ff7373;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    grid-column: 9;
+    justify-self: end;
+    
+}
+
+.radio-indicator__status {
+    padding-left: 10px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 10;
+    justify-self: center;
+}
+
+.radio-indicator__title {
+    grid-column: 11 / 13;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--gray);
+}
+
+/*cover section*/
+
+.cover-section {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(81px, 1fr));
+    grid-template-rows: 973px;
+    grid-gap: 10px;
+}
+
+.cover-section__left {
+    margin: 20px 20px;
+    background-color: var(--red);
+    grid-column: 1 / 7;
+}
+
+.cover-section__title {
+    color: var(--white);
+    letter-spacing: .05rem;
+    padding-left: 0, 20px;
+    grid-column: 1 / 6;
+    font-size: 14px;
+}
+
+.cover-section__photo {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cover-section__info {
+    color: var(--white);
+    padding: 0, 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+
 
 /*
 li {
@@ -184,4 +269,5 @@ li {
     width: 120px;
     padding: 5px 5px;
     letter-spacing: .12rem;
+    border-style: dashed;
 }
