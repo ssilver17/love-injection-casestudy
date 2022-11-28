@@ -123,8 +123,7 @@ img {
 }
 
 .main-nav {
-   display: grid;
-    
+   display: grid;   
 }
 
 .main-nav__list {
@@ -236,11 +235,6 @@ img {
 }
 
 
-/*
-li {
-    padding: 10px 200px 10px 0px;
-}
-*/
 /*merch section*/
 
 .section-merch{
@@ -248,6 +242,10 @@ li {
     grid-template-columns: repeat(4, minmax(264px, 1fr));
     grid-gap: 10px;
     margin-top: 10px;
+}
+
+.merch-item {
+   
 }
 
 .merch-item__price {
@@ -289,4 +287,14 @@ li {
     padding: 5px 5px;
     letter-spacing: .12rem;
     border-style: dashed;
+}
+
+/*footer section*/
+.footer-links__list {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(81px, 1fr));
+    grid-template-rows: 223px;
+    grid-gap: 10px;
+    list-style: none;
+    padding-top: 10px;
 }
