@@ -39,7 +39,7 @@ h3 {
     font-family: sans-serif;
     font-size: 20px;
     margin: 0px 0px 0px 0px;
-    padding: 20px 20px;
+    padding: 10px 20px;
     background-color: #ff737386;
     color: rgba(0, 0, 0, 0.785);
 }
@@ -74,21 +74,19 @@ img {
 
 .component {
 
-    margin-bottom: 50px;
+    margin: 0 20px;
 }
 
-.component__code {
-    border: 1px solid var(--gray);
-}
-
-.component img {
-    max-width: initial;
-    margin-left: 20px;
+.component__name {
+    margin: 0;
+  
 }
 
 .component__img {
+    max-width: initial;
     border: 1px solid var(--gray);
     overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 .component-header__blk {
@@ -244,9 +242,16 @@ img {
     margin-top: 10px;
 }
 
-.merch-item {
-   
+.collection {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    position: relative;
 }
+
+.merch-item__img {
+    margin: 0;
+}
+
 
 .merch-item__price {
     font-family: var(--font-mono);
@@ -293,7 +298,7 @@ img {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(81px, 1fr));
-    grid-template-rows: 223px;
+    grid-template-rows: 260px;
     grid-gap: 10px;
     list-style: none;
     padding-top: 10px;
