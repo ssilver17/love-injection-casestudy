@@ -13,11 +13,14 @@
 </head>
 
 <body>
+<nav class="navbar">  
     <h1>Web Components</h1>
     <p>
-        This is a collection of components based on my study of the design system of Love Injection Fanzine
-    </p>    
+        This is a collection of components based on my study of the design system of Love Injection Fanzine website.
+    </p>   
+</nav>     
 
+<section class="main">
 <!--Typography-->    
     <h2>Typography</h2>
     <article class="component">
@@ -59,9 +62,10 @@
         <h3 class="component__name">.main-nav__wordmark</h3>
         <div class="component__img">
         <img 
-        srcset="img/page-header.png 2x" 
+        srcset="img/page-header.png 2.5x" 
         src="img/page-header.png" alt="body copy">
         </div>
+
         <div class="component__code">
         <h1 class="wordmark">LOVE INJECTION FANZINE &amp; RECORDS</h1>
         </div>
@@ -74,6 +78,7 @@
         srcset="img/main-nav.png 2x" 
         src="img/main-nav.png" alt="body copy">
         </div>
+
         <div class="component__code">
             <div class="main-nav">  
             <ul class="main-nav__list">
@@ -94,9 +99,10 @@
         <h3 class="component__name">.section-cover</h3>
         <div class="component__img">
         <img 
-        srcset="img/section-cover.png 2x" 
+        srcset="img/section-cover.png 2.5x" 
         src="img/section-cover.png" alt="body copy">
         </div>
+
         <div class="component__code">
         <div class="cover-section">
         <div class="cover-section__left">
@@ -120,9 +126,10 @@
         <h3 class="component__name">.section-cover__text</h3>
         <div class="component__img">
         <img 
-        srcset="img/hero-image__title.png 2x" 
+        srcset="img/hero-image__title.png 3x" 
         src="img/hero-image__title.png" alt="body copy">
         </div>
+
         <div class="component__code">
             <p class="cover-section__text">OUT NOW! Barbie Bertisch, Prelude Remixes 12" Single</p>
     
@@ -131,7 +138,6 @@
 
 <!--merch section-->      
     <h2>Merch Section</h2>
-
     <article class="component">
         <h3 class="component__name">.section-merch</h3>
         <div class="component__img">
@@ -141,8 +147,21 @@
         </div>
 
         <div class="component__code">
-        <section class="collection">  
-        <div class="sticky-filter">side bar</div>  
+        <div class="collection">  
+        <div class="sticky-filter">
+            <ul class="filter-toggle">
+                <li class="filter-toggle__title">Filter by:</li>
+                <li class="filter-toggle__item-active"><a href="#!">Everything</a></li>
+                <li class="filter-toggle__item"><a href="#!">Zines</a></li>
+                <li class="filter-toggle__item"><a href="#!">Records</a></li>
+                <li class="filter-toggle__item"><a href="#!">Merch</a></li>
+            </ul>
+            <ul class="filter-toggle">
+                <li class="filter-toggle__title">View as:</li>
+                <li class="filter-toggle__item-active"><a href="#!">Grid</a></li>
+                <li class="filter-toggle__item"><a href="#!">List</a></li>
+            </ul>
+        </div>  
             <div class="section-merch">
                 <div class="merch-item">
                 <img class="merch-item__img"
@@ -171,10 +190,9 @@
                     <p class="merch-item__price">$75</p>
                  </div>
              </div>
-            </div>
-        </section>    
         </div>
-        
+        </div>    
+        </div>   
     </article>
 
     <article class="component">
@@ -207,8 +225,9 @@
         srcset="img/merch-item__title.png 2x" 
         src="img/merch-item__title.png" alt="merch title">
         </div>
-        <p class="merch-item__title">Universal Love Tote Bag</p>
+
         <div class="component__code">
+        <p class="merch-item__title">Universal Love Tote Bag</p>
         </div>
     </article>
 
@@ -234,20 +253,20 @@
         srcset="img/view-toggle.png 2x" 
         src="img/view-toggle.png" alt="view toggle">
         </div>
-        <ul class="filter-toggle">
-            <li class="filter-toggle__title">Filter by:</li>
-            <li class="filter-toggle__item"><a href="#!">Everything</a></li>
-            <li class="filter-toggle__item"><a href="#!">Zines</a></li>
-            <li class="filter-toggle__item"><a href="#!">Records</a></li>
-            <li class="filter-toggle__item"><a href="#!">Merch</a></li>
-        </ul>
-        <div class="component__code">
         
+        <div class="component__code">
+            <ul class="filter-toggle">
+                <li class="filter-toggle__title">Filter by:</li>
+                <li class="filter-toggle__item"><a href="#!">Everything</a></li>
+                <li class="filter-toggle__item"><a href="#!">Zines</a></li>
+                <li class="filter-toggle__item"><a href="#!">Records</a></li>
+                <li class="filter-toggle__item"><a href="#!">Merch</a></li>
+            </ul>
         </div>
     </article>
 
     <article class="component">
-        <h3 class="component__name">.filter-toggle__active</h3>
+        <h3 class="component__name">.filter-toggle__item-active</h3>
         <div class="component__img">
         <img 
         srcset="img/filter-toggle__active.png 2x" 
@@ -255,32 +274,101 @@
         </div>
 
         <div class="component__code">
-            <p class="filter-toggle__active">Everything</p>
+            <p class="filter-toggle__item-active">Everything</p>
         </div>
     </article>
 
 <!--footer-->  
 <h2>Footer</h2>
-<article class="component">
-    <h3 class="component__name">.footer</h3>
-    <div class="component__img">
-    <img 
-    srcset="img/footer.png 2x" 
-    src="img/footer.png" alt="body copy">
-    </div>
-    <div class="component__code">
-        <div class="footer-grid">   
+    <article class="component">
+        <h3 class="component__name">.footer</h3>
+        <div class="component__img">
+        <img 
+        srcset="img/footer.png 2x" 
+        src="img/footer.png" alt="body copy">
+        </div>
+        <div class="component__code">
+            <div class="footer-grid">   
+                <div class="footer-details">
+                    <p class="footer-copyright">&copy; 2015-2022 Love Injection. A New York music &amp; culture fanzine by Barbie Bertisch and Paul Raffaele.</p>
+                    <p>XO, Barbie &amp; Paul</p>
+                    <p class="footer-copyright__credit"><a href="#!">Site Credit</a></p>
+                </div>
+                <div class="footer-email">
+                    <p class="footer-signup">Sign up for our email list</p>
+                    <input class="input" type="email" placeholder="youremail@website.com">
+                    <input class="button" type="submit">
+                </div>  
+                <div class="footer-links">
+                    <ul class="footer-links__list">
+                        <li class="footer-links__header"><a href="#!">Links:</a></li>
+                        <li class="footer-links"><a href="#!">Contact</a></li>
+                        <li class="footer-links"><a href="#!">Stockists</a></li>
+                        <li class="footer-links"><a href="#!">Bandcamp</a></li>
+                        <li class="footer-links"><a href="#!">Instagram</a></li>
+                        <li class="footer-links"><a href="#!">Soundcloud</a></li>
+                        <li class="footer-links"><a href="#!">Facebook</a></li>
+                    </ul>    
+                </div>  
+                <div class="footer-radio">  
+                    <div class="footer-radio__indicator"></div>
+                        <div class="radio-indicator__button">
+                            <p class="radio-indicator__status">Off Air</p>
+                        
+                            <p class="radio-indicator__title">The Lot Radio Saturdays, 10am-12pm (EST)
+                            </p>
+                        </div>     
+                    </div> <!--end footer grid-->
+                </div>
+        </div>
+    </article>
+
+    <article class="component">
+        <h3 class="component__name">.footer-copyright</h3>
+        <div class="component__img">
+        <img 
+        srcset="img/footer-copyright.png 2x" 
+        src="img/footer-copyright.png" alt="body copy">
+        </div>
+
+        <div class="component__code">
+            <div class="footer-grid">  
             <div class="footer-details">
                 <p class="footer-copyright">&copy; 2015-2022 Love Injection. A New York music &amp; culture fanzine by Barbie Bertisch and Paul Raffaele.</p>
                 <p>XO, Barbie &amp; Paul</p>
                 <p class="footer-copyright__credit"><a href="#!">Site Credit</a></p>
+            </div> 
             </div>
+        </div>
+    </article>
+
+    <article class="component">
+        <h3 class="component__name">.footer-email</h3>
+        <div class="component__img">
+        <img 
+        srcset="img/footer-email.png 2x" 
+        src="img/footer-email.png" alt="body copy">
+        </div>
+        
+        <div class="footer__email">
             <div class="footer-email">
                 <p class="footer-signup">Sign up for our email list</p>
                 <input class="input" type="email" placeholder="youremail@website.com">
+            </div> 
                 <input class="button" type="submit">
-            </div>  
-            <div class="footer-links">
+             
+        </div>
+    </article>
+
+    <article class="component">
+        <h3 class="component__name">.footer-links</h3>
+        <div class="component__img">
+        <img 
+        srcset="img/footer-links.png 2x" 
+        src="img/footer-links.png" alt="body copy">
+        </div>
+        <div class="component__code">
+            <div class="footer-link">  
                 <ul class="footer-links__list">
                     <li class="footer-links__header"><a href="#!">Links:</a></li>
                     <li class="footer-links"><a href="#!">Contact</a></li>
@@ -289,98 +377,30 @@
                     <li class="footer-links"><a href="#!">Instagram</a></li>
                     <li class="footer-links"><a href="#!">Soundcloud</a></li>
                     <li class="footer-links"><a href="#!">Facebook</a></li>
-                </ul>    
+                </ul>
             </div>  
-            <div class="footer-radio">  
-                <div class="footer-radio__indicator"></div>
-                    <div class="radio-indicator__button">
-                        <p class="radio-indicator__status">Off Air</p>
-                    
-                        <p class="radio-indicator__title">The Lot Radio Saturdays, 10am-12pm (EST)
-                        </p>
-                    </div>     
-                </div> <!--end footer grid-->
-            </div>
-    </div>
-</article>
-
-<article class="component">
-    <h3 class="component__name">.footer-copyright</h3>
-    <div class="component__img">
-    <img 
-    srcset="img/footer-copyright.png 2x" 
-    src="img/footer-copyright.png" alt="body copy">
-    </div>
-
-    <div class="component__code">
-        <div class="footer-grid">  
-        <div class="footer-details">
-            <p class="footer-copyright">&copy; 2015-2022 Love Injection. A New York music &amp; culture fanzine by Barbie Bertisch and Paul Raffaele.</p>
-            <p>XO, Barbie &amp; Paul</p>
-            <p class="footer-copyright__credit"><a href="#!">Site Credit</a></p>
-        </div> 
         </div>
-    </div>
-</article>
+    </article>
 
-<article class="component">
-    <h3 class="component__name">.footer-email</h3>
-    <div class="component__img">
-    <img 
-    srcset="img/footer-email.png 2x" 
-    src="img/footer-email.png" alt="body copy">
-    </div>
-    
-    <div class="component__code">
-        <div class="footer-email">
-        <p class="footer-signup">Sign up for our email list</p>
-        <input class="input" type="email" placeholder="youremail@website.com">
-        <input class="button" type="submit">
-        </div>  
-    </div>
-</article>
-
-<article class="component">
-    <h3 class="component__name">.footer-links</h3>
-    <div class="component__img">
-    <img 
-    srcset="img/footer-links.png 2x" 
-    src="img/footer-links.png" alt="body copy">
-    </div>
-    <div class="component__code">
-        <div class="footer-link">  
-            <ul class="footer-links__list">
-                <li class="footer-links__header"><a href="#!">Links:</a></li>
-                <li class="footer-links"><a href="#!">Contact</a></li>
-                <li class="footer-links"><a href="#!">Stockists</a></li>
-                <li class="footer-links"><a href="#!">Bandcamp</a></li>
-                <li class="footer-links"><a href="#!">Instagram</a></li>
-                <li class="footer-links"><a href="#!">Soundcloud</a></li>
-                <li class="footer-links"><a href="#!">Facebook</a></li>
-            </ul>
-        </div>  
-    </div>
-</article>
-
-<article class="component">
-    <h3 class="component__name">.footer-radio</h3>
-    <div class="component__img">
-    <img 
-    srcset="img/footer-radio.png 2x" 
-    src="img/footer-radio.png" alt="body copy">
-    </div>
-    <div class="component__code">
-        <div class="main-nav">  
-            <ul class="footer-radio__atom">
-                <li class="radio-indicator__button"></li>
-                <li class="radio-indicator__status">Off Air</li>
-            </ul>
-            <ul>  
-                <li class="radio-indicator__title">The Lot Radio Saturdays, 10am-12pm (EST)</li>
-            </ul>
-            </div>   
-    </div>
-</article>
-
+    <article class="component">
+        <h3 class="component__name">.footer-radio</h3>
+        <div class="component__img">
+        <img 
+        srcset="img/footer-radio.png 2x" 
+        src="img/footer-radio.png" alt="body copy">
+        </div>
+        <div class="component__code">
+            <div class="main-nav">  
+                <ul class="footer-radio__atom">
+                    <li class="radio-indicator__button"></li>
+                    <li class="radio-indicator__status">Off Air</li>
+                </ul>
+                <ul>  
+                    <li class="radio-indicator__title">The Lot Radio Saturdays, 10am-12pm (EST)</li>
+                </ul>
+                </div>   
+        </div>
+    </article>
+</section>    
 </body>
 </html>
