@@ -16,7 +16,7 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    margin: 0
+    margin: 5px 5px
   }
 
 h1 {
@@ -123,7 +123,7 @@ img {
     flex-wrap: nowrap;
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.25rem;
     letter-spacing: -4px;
     line-height: 3rem;
     margin-left: 0;
@@ -196,7 +196,6 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 10px;
     padding: 20px 10px;
     background-color: var(--red);
     grid-column: 1 / 7;
@@ -208,7 +207,6 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 10px;
     padding: 20px 10px;
     background-color: rgb(75, 58, 106);
     grid-column: 7 / 13;
@@ -247,7 +245,7 @@ img {
 
 .section-merch{
     display: grid;
-    grid-template-columns: repeat(4, minmax(264px, 1fr));
+    grid-template-columns: repeat(4, minmax(284px, 1fr));
     grid-gap: 10px;
     margin-top: 10px;
 }
