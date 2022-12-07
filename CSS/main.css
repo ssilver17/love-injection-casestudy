@@ -197,6 +197,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10px;
+    margin: 0px;
     background-color: var(--red);
     grid-column: 1 / 7;
 }
@@ -208,6 +209,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10px;
+    margin: 0px;
     background-color: rgb(75, 58, 106);
     grid-column: 7 / 13;
 }
@@ -263,17 +265,20 @@ img {
 
 .merch-item__price {
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0px;
     color: var(--gray)
 }
 
 .merch-item__title {
     font-family: var(--font-mono);
-    font-size: 20px;
+    font-size: .875rem;
     line-height: 1.25rem;
     margin-bottom: 10px;
-    color: var(--black)
+    color: var(--black);
+    margin: 0px;
+    padding-left: 0;
+    width: 284px;
 }
 
 /*filter toggle*/
