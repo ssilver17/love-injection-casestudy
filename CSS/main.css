@@ -55,9 +55,14 @@ p {
 a {
     text-decoration: none;
     color: #000;
+    margin: 0px;
+}
+a:hover {
+    text-decoration: underline;
+    margin: 0px;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     float: left;
     width: 20%;
@@ -69,6 +74,10 @@ a {
     float: right;
     width: 80%;
     overflow: auto;
+}
+
+ul {
+    padding: 0;
 }
 
 
@@ -119,11 +128,12 @@ img {
 
 /*page header*/
 .wordmark {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
     font-family: sans-serif;
+    text-align: center;
     font-weight: 700;
-    font-size: 3.25rem;
+    font-size: 3.32rem;
     letter-spacing: -4px;
     line-height: 3rem;
     margin-left: 0;
@@ -247,7 +257,7 @@ img {
 
 .section-merch{
     display: grid;
-    grid-template-columns: repeat(4, minmax(284px, 1fr));
+    grid-template-columns: repeat(3, minmax(282px, 1fr));
     grid-gap: 10px;
     margin-top: 10px;
 }
@@ -258,6 +268,12 @@ img {
     position: relative;
 }
 
+.filter-toggle__item a:hover {
+    background-color: #fffab4;
+    padding: 5px 50px 5px 5px;
+    text-decoration: none;
+}
+
 .merch-item__img {
     margin: 0;
 }
@@ -266,7 +282,8 @@ img {
 .merch-item__price {
     font-family: var(--font-mono);
     font-size: 14px;
-    margin-top: 0px;
+    margin: 0px;
+    padding: 10px 0px;
     color: var(--gray)
 }
 
@@ -276,7 +293,7 @@ img {
     line-height: 1.25rem;
     margin-bottom: 10px;
     color: var(--black);
-    margin: 0px;
+    margin: 30px 0px 0px 0px;
     padding-left: 0;
     width: 284px;
 }
