@@ -152,6 +152,8 @@ img {
     list-style: none;
     padding-top: 10px;
     margin-bottom: 150px;
+    position: sticky;
+    top: 0;
 }
 
 .main-nav__index {
@@ -258,7 +260,7 @@ img {
 .section-merch{
     display: grid;
     grid-template-columns: repeat(3, minmax(282px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 15px;
     margin-top: 10px;
 }
 
@@ -266,6 +268,11 @@ img {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     position: relative;
+}
+
+.sticky-filter {
+    position: sticky;
+    top: 0;
 }
 
 .filter-toggle__item a:hover {
