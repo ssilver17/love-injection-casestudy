@@ -273,6 +273,7 @@ img {
 .sticky-filter {
     position: sticky;
     top: 0;
+    height: 100px;
 }
 
 .filter-toggle__item a:hover {
@@ -328,10 +329,11 @@ img {
     grid-column: 2;
     padding: 5px 5px;
     background-color: #fffab4;
-    width: 120px;
+    width: 116px;
     font-size: 17px;
     letter-spacing: .05rem;
     border: dashed;
+    margin-bottom: 40px;
 }
 
 /*footer section*/
@@ -341,7 +343,7 @@ img {
     grid-template-rows: 260px;
     grid-gap: 10px;
     list-style: none;
-    padding: 10px, 0
+    padding: 10px 0px
  
 }
 
@@ -368,7 +370,6 @@ img {
 
 .component__code-footer__email {
     height: 200px;
-    display: ;
 }
 
 .footer-email {
@@ -422,16 +423,25 @@ img {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-end;  
+    justify-content: flex-end; 
+    margin-right: 50px;
 }
 
 .radio-indicator__status {
     font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-radio__indicator {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .radio-indicator__title {
     font-size: 14px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
