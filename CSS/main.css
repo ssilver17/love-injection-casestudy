@@ -142,6 +142,7 @@ img {
 
 .main-nav {
    display: grid;  
+   height: 20px;
 }
 
 .main-nav__list {
@@ -154,7 +155,7 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: 20px;
-    height: 5px;
+   
 
 }
 
@@ -259,10 +260,17 @@ img {
 
 
 /*merch section*/
+@media (min-width: 768px)
+.section-merch {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 15px;
+    margin-top: 10px;
+}
 
 .section-merch{
     display: grid;
-    grid-template-columns: repeat(3, minmax(282px, 1fr));
+    grid-template-columns: repeat(3, minmax(282px,1fr));
     grid-gap: 15px;
     margin-top: 10px;
 }
