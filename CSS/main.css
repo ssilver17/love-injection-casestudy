@@ -141,7 +141,7 @@ img {
 }
 
 .main-nav {
-   display: grid;   
+   display: grid;  
 }
 
 .main-nav__list {
@@ -150,10 +150,12 @@ img {
     grid-template-rows: 71px;
     grid-gap: 10px;
     list-style: none;
-    padding-top: 10px;
-    margin-bottom: 150px;
+    padding-top: 0px;
+    position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 20px;
+    height: 5px;
+
 }
 
 .main-nav__index {
@@ -200,6 +202,7 @@ img {
     grid-template-columns: repeat(12, minmax(81px, 1fr));
     grid-template-rows: 973px;
     grid-gap: 10px;
+    margin-top: 150px;
 }
 
 .cover-section__left {
@@ -431,6 +434,8 @@ img {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer-radio__indicator {
@@ -442,6 +447,7 @@ img {
 .radio-indicator__title {
     font-size: 14px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    display: flex;
+    text-align: right;
 }
 
