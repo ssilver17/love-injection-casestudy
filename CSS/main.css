@@ -10,7 +10,6 @@
 }
 
 /*main*/
-
 html {
     box-sizing: border-box;
   }
@@ -80,8 +79,6 @@ ul {
     padding: 0;
 }
 
-
-
 /*Typogrophy*/  
 body {
     font-family: var(--font-mono);
@@ -96,7 +93,6 @@ img {
 }
 
 /*components*/
-
 .component__name {
     padding-left: 20px;
 }
@@ -128,9 +124,7 @@ img {
 
 /*page header*/
 .wordmark {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+    display: cover;
     font-family: sans-serif;
     text-align: center;
     font-weight: 700;
@@ -143,6 +137,8 @@ img {
 
 .main-nav {
    display: grid;  
+   position: sticky;
+   top: 0;
    height: 20px;
 }
 
@@ -153,11 +149,6 @@ img {
     grid-gap: 10px;
     list-style: none;
     padding-top: 0px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;
-   
-
 }
 
 .main-nav__index {
@@ -198,7 +189,6 @@ img {
 }
 
 /*cover section*/
-
 .cover-section {
     display: grid;
     grid-template-columns: repeat(12, minmax(81px, 1fr));
@@ -261,14 +251,6 @@ img {
 
 
 /*merch section*/
-@media (min-width: 768px)
-.section-merch {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 15px;
-    margin-top: 10px;
-}
-
 .section-merch{
     display: grid;
     grid-template-columns: repeat(3, minmax(282px,1fr));
@@ -283,6 +265,7 @@ img {
 }
 
 .sticky-filter {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 100px;
@@ -297,7 +280,6 @@ img {
 .merch-item__img {
     margin: 0;
 }
-
 
 .merch-item__price {
     font-family: var(--font-mono);
@@ -319,7 +301,6 @@ img {
 }
 
 /*filter toggle*/
-
 .filter-toggle {
     list-style: none;
     padding: 0px 10px 0px 10px;
@@ -356,7 +337,6 @@ img {
     grid-gap: 10px;
     list-style: none;
     padding: 10px 0px
- 
 }
 
 .footer-details {
@@ -418,7 +398,7 @@ img {
     list-style: none;
     padding: 0;
     font-size: 18px;
-    line-height: 1.2rem;
+    line-height: 1.12rem;
 }
 
 .footer-links {
@@ -436,7 +416,6 @@ img {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 40px;
-   
 }
 
 .radio-indicator__status {
@@ -449,7 +428,6 @@ img {
 
 .footer-radio__indicator {
     display: inline-flex;
-  
 }
 
 .radio-indicator__title {
@@ -458,6 +436,5 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
 
