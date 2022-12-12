@@ -229,7 +229,6 @@ img {
     align-self: flex-start;
 }
 
-
 .cover-section__photo {
     display: flex;
 }
@@ -248,7 +247,6 @@ img {
     width: 550px;
     padding: 5px 10px;
 }
-
 
 /*merch section*/
 .section-merch{
