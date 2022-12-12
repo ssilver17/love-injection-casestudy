@@ -124,11 +124,10 @@ img {
 
 /*page header*/
 .wordmark {
-    display: cover;
     font-family: sans-serif;
     text-align: center;
     font-weight: 700;
-    font-size: 3.32rem;
+    font-size: 3.4rem;
     letter-spacing: -4px;
     line-height: 3rem;
     margin-left: 0;
